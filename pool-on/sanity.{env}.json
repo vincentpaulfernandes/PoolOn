@@ -1,0 +1,13 @@
+{
+  "api": {
+    "projectId": "7mvkx3am",
+  "dataset": "production",
+    "access": [
+      {
+        "role": "my-role",
+        "permission": "update",
+        "query": "*"
+      }
+    ]
+  }
+}

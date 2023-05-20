@@ -1,0 +1,12 @@
+{
+    "routes": [
+      {
+        "src": "/api/v2021-10-21/data/query/*",
+        "methods": ["GET"],
+        "headers": {
+          "Access-Control-Allow-Origin": "*"
+        }
+      }
+    ]
+  }
+  
