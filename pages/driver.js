@@ -61,14 +61,14 @@ if (rideCountForLocationPair === 1) {
   const transaction = {
     from: process.env.NEXT_PUBLIC_DRIVER_ADDRESS,
     to: process.env.NEXT_PUBLIC_UBER_ADDRESS,
-    value: ethers.utils.hexlify(Math.round(price * 2 * 1e18)),
+    value: ethers.utils.hexlify(Math.round(price * 1e18)),
   };
   metamask.request({ method: 'eth_sendTransaction', params: [transaction] });
 } else if (rideCountForLocationPair === 3) {
   const transaction = {
     from: process.env.NEXT_PUBLIC_DRIVER_ADDRESS,
     to: process.env.NEXT_PUBLIC_UBER_ADDRESS,
-    value: ethers.utils.hexlify(Math.round(price * 3 * 1e18)),
+    value: ethers.utils.hexlify(Math.round(price * 1e18)),
   };
   metamask.request({ method: 'eth_sendTransaction', params: [transaction] });
 }
